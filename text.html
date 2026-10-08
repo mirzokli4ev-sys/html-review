@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Review — Text</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTML Tags Review</h1>
+  <p>Page 2 — Text formatting tags</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="text.html" class="active">Text</a>
+  <a href="links.html">Links &amp; Images</a>
+  <a href="lists.html">Lists</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="media.html">Multimedia</a>
+  <a href="semantic.html">Semantic</a>
+  <a href="metadata.html">Metadata</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Text formatting tags</h2>
+    <p>These tags structure and emphasize text: headings, paragraphs, bold, italic, line breaks and more.</p>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;h1&gt; … &lt;h6&gt;</h3>
+    <h4>Definition</h4>
+    <p>Six levels of headings. <code>&lt;h1&gt;</code> is the most important title, <code>&lt;h6&gt;</code> the least.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Only global attributes such as <code>id</code> and <code>class</code>.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;h1&gt;Title&lt;/h1&gt;
+&lt;h2&gt;Subtitle&lt;/h2&gt;
+&lt;h3&gt;Section&lt;/h3&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <h1>Title</h1>
+      <h2>Subtitle</h2>
+      <h3>Section</h3>
+    </div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;p&gt;</h3>
+    <h4>Definition</h4>
+    <p>Defines a paragraph of text. Browsers add space above and below it.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Only global attributes.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result"><p>This is a paragraph of text.</p></div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;strong&gt;, &lt;b&gt;, &lt;em&gt;, &lt;i&gt;</h3>
+    <h4>Definition</h4>
+    <p><code>&lt;strong&gt;</code> marks important text (bold), <code>&lt;b&gt;</code> is visually bold,
+       <code>&lt;em&gt;</code> gives emphasis (italic), <code>&lt;i&gt;</code> is visually italic.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Only global attributes.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;strong&gt;Important&lt;/strong&gt; and &lt;em&gt;emphasized&lt;/em&gt; text.</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result"><strong>Important</strong> and <em>emphasized</em> text.</div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;br&gt; and &lt;hr&gt;</h3>
+    <h4>Definition</h4>
+    <p><code>&lt;br&gt;</code> inserts a single line break. <code>&lt;hr&gt;</code> draws a horizontal
+       dividing line. Both are empty tags (no closing tag).</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Only global attributes; presentational size/color is done with CSS.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>Line one&lt;br&gt;Line two
+&lt;hr&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">Line one<br>Line two<hr></div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;span&gt;, &lt;mark&gt;, &lt;sup&gt;, &lt;sub&gt;</h3>
+    <h4>Definition</h4>
+    <p><code>&lt;span&gt;</code> is an inline container for styling part of text.
+       <code>&lt;mark&gt;</code> highlights text. <code>&lt;sup&gt;</code> makes superscript,
+       <code>&lt;sub&gt;</code> subscript.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>class / id</td><td>Used to target the element with CSS.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>H&lt;sub&gt;2&lt;/sub&gt;O and E = mc&lt;sup&gt;2&lt;/sup&gt;.
+&lt;mark&gt;Highlighted&lt;/mark&gt; word.</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">H<sub>2</sub>O and E = mc<sup>2</sup>. <mark>Highlighted</mark> word.</div>
+  </section>
+</main>
+
+<footer>
+  <p>HTML Tags Review &middot; Pair project &middot; <a href="index.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

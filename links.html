@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Review — Links &amp; Images</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTML Tags Review</h1>
+  <p>Page 3 — Links and images</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="text.html">Text</a>
+  <a href="links.html" class="active">Links &amp; Images</a>
+  <a href="lists.html">Lists</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="media.html">Multimedia</a>
+  <a href="semantic.html">Semantic</a>
+  <a href="metadata.html">Metadata</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Links and images</h2>
+    <p>The anchor tag connects pages together, and the image tag embeds pictures.</p>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;a&gt;</h3>
+    <h4>Definition</h4>
+    <p>The anchor tag creates a hyperlink to another page, a section, an email or a file.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>href</td><td>The destination URL or path of the link.</td></tr>
+      <tr><td>target</td><td>Where to open the link, e.g. <code>_blank</code> for a new tab.</td></tr>
+      <tr><td>title</td><td>Tooltip text shown on hover.</td></tr>
+      <tr><td>rel</td><td>Relationship, e.g. <code>noopener</code> for security.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result"><a href="https://example.com" target="_blank" rel="noopener">Visit Example</a></div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;img&gt;</h3>
+    <h4>Definition</h4>
+    <p>Embeds an image in the page. It is an empty tag (no closing tag).</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>src</td><td>The path or URL of the image file.</td></tr>
+      <tr><td>alt</td><td>Alternative text shown if the image fails to load (and for accessibility).</td></tr>
+      <tr><td>width</td><td>The width of the image in pixels.</td></tr>
+      <tr><td>height</td><td>The height of the image in pixels.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;img src="images/sample.jpg" alt="A modern house" width="300"&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result"><img src="images/sample.jpg" alt="A modern house" width="300"></div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;a&gt; around an &lt;img&gt;</h3>
+    <h4>Definition</h4>
+    <p>An image can become a clickable link by placing <code>&lt;img&gt;</code> inside an <code>&lt;a&gt;</code>.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>href</td><td>Destination of the clickable image.</td></tr>
+      <tr><td>alt</td><td>Describes the image inside the link.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;a href="index.html"&gt;
+  &lt;img src="images/sample.jpg" alt="Go home" width="150"&gt;
+&lt;/a&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result"><a href="index.html"><img src="images/sample.jpg" alt="Go home" width="150"></a></div>
+  </section>
+</main>
+
+<footer>
+  <p>HTML Tags Review &middot; Pair project &middot; <a href="index.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

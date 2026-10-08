@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review of HTML metadata tags: meta, link, title, base.">
+  <meta name="author" content="HTML Review pair project">
+  <title>HTML Review — Metadata</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTML Tags Review</h1>
+  <p>Page 9 — Metadata (information about the page)</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="text.html">Text</a>
+  <a href="links.html">Links &amp; Images</a>
+  <a href="lists.html">Lists</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="media.html">Multimedia</a>
+  <a href="semantic.html">Semantic</a>
+  <a href="metadata.html" class="active">Metadata</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Metadata</h2>
+    <p>Metadata tags live inside <code>&lt;head&gt;</code>. They are not displayed in the page, but
+       give the browser and search engines information about it.</p>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;meta&gt;</h3>
+    <h4>Definition</h4>
+    <p>Provides metadata such as the character set, the page description or the viewport.
+       It is an empty tag placed in the <code>&lt;head&gt;</code>.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>charset</td><td>Sets the character encoding, usually <code>UTF-8</code>.</td></tr>
+      <tr><td>name</td><td>Type of metadata: <code>description</code>, <code>author</code>, <code>viewport</code>…</td></tr>
+      <tr><td>content</td><td>The value linked to the <code>name</code>.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="A page about HTML tags."&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">These <code>&lt;meta&gt;</code> tags are in the <code>&lt;head&gt;</code> of this page — open the source to see them.</div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;title&gt;</h3>
+    <h4>Definition</h4>
+    <p>Sets the title of the page, shown in the browser tab and used by search engines.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(none)</td><td>No attributes; the title is the text between the tags.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;title&gt;HTML Review — Metadata&lt;/title&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">Look at your browser tab: it shows <strong>HTML Review — Metadata</strong>.</div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;link&gt;</h3>
+    <h4>Definition</h4>
+    <p>Links an external resource to the page — most often the CSS stylesheet or a favicon.
+       It is an empty tag in the <code>&lt;head&gt;</code>.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>rel</td><td>Relationship, e.g. <code>stylesheet</code> or <code>icon</code>.</td></tr>
+      <tr><td>href</td><td>Path of the linked file.</td></tr>
+      <tr><td>type</td><td>MIME type of the resource (optional).</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;link rel="icon" href="images/favicon.png"&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">The style of every page here is loaded with a <code>&lt;link rel="stylesheet"&gt;</code>.</div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;base&gt;</h3>
+    <h4>Definition</h4>
+    <p>Sets a base URL for all relative links in the page. Placed once in the <code>&lt;head&gt;</code>.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>href</td><td>The base URL used for every relative link.</td></tr>
+      <tr><td>target</td><td>Default target for all links (e.g. <code>_blank</code>).</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;base href="https://example.com/"&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">With a <code>&lt;base&gt;</code>, a link like <code>page.html</code> would point to <code>https://example.com/page.html</code>.</div>
+  </section>
+</main>
+
+<footer>
+  <p>HTML Tags Review &middot; Pair project &middot; <a href="index.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

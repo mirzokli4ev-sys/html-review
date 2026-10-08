@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Review — Lists</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTML Tags Review</h1>
+  <p>Page 4 — Lists</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="text.html">Text</a>
+  <a href="links.html">Links &amp; Images</a>
+  <a href="lists.html" class="active">Lists</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="media.html">Multimedia</a>
+  <a href="semantic.html">Semantic</a>
+  <a href="metadata.html">Metadata</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Lists</h2>
+    <p>HTML offers unordered lists, ordered lists and description lists.</p>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;ul&gt; and &lt;li&gt;</h3>
+    <h4>Definition</h4>
+    <p>An unordered list shows items with bullet points. Each item is a <code>&lt;li&gt;</code>.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Bullet style is set with CSS (<code>list-style-type</code>).</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result"><ul><li>Apple</li><li>Banana</li></ul></div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;ol&gt; and &lt;li&gt;</h3>
+    <h4>Definition</h4>
+    <p>An ordered list numbers its items automatically.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>type</td><td>Numbering style: <code>1</code>, <code>A</code>, <code>a</code>, <code>I</code>, <code>i</code>.</td></tr>
+      <tr><td>start</td><td>The number the list starts counting from.</td></tr>
+      <tr><td>reversed</td><td>Counts down instead of up.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;ol type="1" start="1"&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result"><ol type="1" start="1"><li>First</li><li>Second</li></ol></div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h3>
+    <h4>Definition</h4>
+    <p>A description list pairs terms (<code>&lt;dt&gt;</code>) with their descriptions (<code>&lt;dd&gt;</code>).</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Only global attributes.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;The language of web pages.&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result"><dl><dt><strong>HTML</strong></dt><dd>The language of web pages.</dd></dl></div>
+  </section>
+
+  <section class="tag">
+    <h3>Nested lists</h3>
+    <h4>Definition</h4>
+    <p>A list can contain another list inside an <code>&lt;li&gt;</code> to build sub-levels.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Only global attributes.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Fruit
+    &lt;ul&gt;&lt;li&gt;Apple&lt;/li&gt;&lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result"><ul><li>Fruit<ul><li>Apple</li></ul></li></ul></div>
+  </section>
+</main>
+
+<footer>
+  <p>HTML Tags Review &middot; Pair project &middot; <a href="index.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

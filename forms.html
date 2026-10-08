@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Review — Forms</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTML Tags Review</h1>
+  <p>Page 6 — Forms</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="text.html">Text</a>
+  <a href="links.html">Links &amp; Images</a>
+  <a href="lists.html">Lists</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html" class="active">Forms</a>
+  <a href="media.html">Multimedia</a>
+  <a href="semantic.html">Semantic</a>
+  <a href="metadata.html">Metadata</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Forms</h2>
+    <p>Forms collect information from the user with inputs, labels, text areas and buttons.</p>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;form&gt;</h3>
+    <h4>Definition</h4>
+    <p>The container that groups form controls and sends their data to a server.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>action</td><td>The URL that receives the submitted data.</td></tr>
+      <tr><td>method</td><td>How data is sent: <code>get</code> or <code>post</code>.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;form action="/send" method="post"&gt; ... &lt;/form&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result"><em>A form wraps all the controls below.</em></div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;label&gt; and &lt;input&gt;</h3>
+    <h4>Definition</h4>
+    <p><code>&lt;input&gt;</code> is a control that accepts data. <code>&lt;label&gt;</code> gives it a
+       clickable text label. <code>&lt;input&gt;</code> is an empty tag.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>type</td><td>Kind of field: <code>text</code>, <code>email</code>, <code>password</code>, <code>checkbox</code>, <code>radio</code>, <code>number</code>…</td></tr>
+      <tr><td>name</td><td>The key sent with the value to the server.</td></tr>
+      <tr><td>placeholder</td><td>Hint text shown inside an empty field.</td></tr>
+      <tr><td>required</td><td>Makes the field mandatory.</td></tr>
+      <tr><td>for (on label)</td><td>Links the label to an input by its <code>id</code>.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;label for="mail"&gt;Email&lt;/label&gt;
+&lt;input type="email" id="mail" name="mail" placeholder="you@mail.com" required&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <form>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="mail" placeholder="you@mail.com" required>
+      </form>
+    </div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;textarea&gt;, &lt;select&gt;, &lt;option&gt;, &lt;button&gt;</h3>
+    <h4>Definition</h4>
+    <p><code>&lt;textarea&gt;</code> is a multi-line text box. <code>&lt;select&gt;</code> is a drop-down
+       menu made of <code>&lt;option&gt;</code> items. <code>&lt;button&gt;</code> triggers an action.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>rows / cols</td><td>Size of the <code>&lt;textarea&gt;</code>.</td></tr>
+      <tr><td>value (option)</td><td>The data sent when that option is chosen.</td></tr>
+      <tr><td>type (button)</td><td><code>submit</code>, <code>reset</code> or <code>button</code>.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;textarea rows="3"&gt;&lt;/textarea&gt;
+&lt;select&gt;
+  &lt;option value="a"&gt;Option A&lt;/option&gt;
+  &lt;option value="b"&gt;Option B&lt;/option&gt;
+&lt;/select&gt;
+&lt;button type="submit"&gt;Send&lt;/button&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <form>
+        <textarea rows="3" cols="30"></textarea><br><br>
+        <select>
+          <option value="a">Option A</option>
+          <option value="b">Option B</option>
+        </select>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>HTML Tags Review &middot; Pair project &middot; <a href="index.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

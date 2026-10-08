@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Review — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTML Tags Review</h1>
+  <p>A multi-page guide to the main HTML tags: definition, attributes and examples</p>
+</header>
+
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="text.html">Text</a>
+  <a href="links.html">Links &amp; Images</a>
+  <a href="lists.html">Lists</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="media.html">Multimedia</a>
+  <a href="semantic.html">Semantic</a>
+  <a href="metadata.html">Metadata</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Welcome</h2>
+    <p>This website reviews the main HTML tags. Each page explains one family of tags
+       with three parts: a <strong>Definition</strong>, a table of <strong>Attributes</strong>,
+       and an <strong>Example</strong> shown twice — once as code and once as the real result
+       in the browser. Use the menu above to navigate.</p>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;!DOCTYPE html&gt;</h3>
+    <h4>Definition</h4>
+    <p>The document type declaration. It is the very first line of a page and tells the
+       browser to use the modern HTML5 standard.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(none)</td><td>&lt;!DOCTYPE html&gt; has no attributes; it is just a declaration.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt; ... &lt;/html&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">This whole page starts with <code>&lt;!DOCTYPE html&gt;</code> — view the source to see it.</div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;html&gt;</h3>
+    <h4>Definition</h4>
+    <p>The root element that wraps all the content of the page. Everything else lives inside it.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>lang</td><td>Declares the language of the document (e.g. <code>en</code>, <code>fr</code>).</td></tr>
+      <tr><td>dir</td><td>Text direction: <code>ltr</code> (left-to-right) or <code>rtl</code>.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;html lang="en"&gt;
+  &lt;head&gt; ... &lt;/head&gt;
+  &lt;body&gt; ... &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">The <code>&lt;html lang="en"&gt;</code> element contains this entire document.</div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;head&gt;</h3>
+    <h4>Definition</h4>
+    <p>A container for information <em>about</em> the page (metadata): title, character set,
+       links to stylesheets. Its content is not shown in the page body.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(none)</td><td>The &lt;head&gt; element has no specific attributes.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">The title in your browser tab and the styles of this page come from the <code>&lt;head&gt;</code>.</div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;body&gt;</h3>
+    <h4>Definition</h4>
+    <p>The container for all the <strong>visible</strong> content of the page: text, images,
+       links, tables and everything the user sees.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Uses global attributes such as <code>id</code>, <code>class</code>, <code>lang</code>. Presentational attributes are replaced by CSS.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;body&gt;
+  &lt;h1&gt;Hello&lt;/h1&gt;
+  &lt;p&gt;Visible content goes here.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <strong>Hello</strong><br>
+      Visible content goes here.
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>HTML Tags Review &middot; Pair project &middot; <a href="index.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

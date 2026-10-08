@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Review — Tables</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTML Tags Review</h1>
+  <p>Page 5 — Tables</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="text.html">Text</a>
+  <a href="links.html">Links &amp; Images</a>
+  <a href="lists.html">Lists</a>
+  <a href="tables.html" class="active">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="media.html">Multimedia</a>
+  <a href="semantic.html">Semantic</a>
+  <a href="metadata.html">Metadata</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Tables</h2>
+    <p>Tables display data in rows and columns using a group of related tags.</p>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h3>
+    <h4>Definition</h4>
+    <p><code>&lt;table&gt;</code> is the container, <code>&lt;tr&gt;</code> is a table row,
+       <code>&lt;td&gt;</code> is a data cell and <code>&lt;th&gt;</code> is a header cell (bold, centered).</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>colspan</td><td>Makes a cell span several columns.</td></tr>
+      <tr><td>rowspan</td><td>Makes a cell span several rows.</td></tr>
+      <tr><td>scope</td><td>On <code>&lt;th&gt;</code>: tells if it heads a <code>row</code> or a <code>col</code>.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Sara&lt;/td&gt;&lt;td&gt;20&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <table>
+        <tr><th>Name</th><th>Age</th></tr>
+        <tr><td>Sara</td><td>20</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;caption&gt;</h3>
+    <h4>Definition</h4>
+    <p>These group the parts of a table: a header section, a body, a footer, and a title
+       (<code>&lt;caption&gt;</code>) shown above the table.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Only global attributes; styling is done with CSS.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;table&gt;
+  &lt;caption&gt;Students&lt;/caption&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <table>
+        <caption><strong>Students</strong></caption>
+        <thead><tr><th>Name</th></tr></thead>
+        <tbody><tr><td>Ali</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="tag">
+    <h3>colspan example</h3>
+    <h4>Definition</h4>
+    <p>A cell can merge columns with <code>colspan</code>.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>colspan</td><td>Number of columns the cell covers.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;tr&gt;&lt;td colspan="2"&gt;Merged cell&lt;/td&gt;&lt;/tr&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <table>
+        <tr><th>A</th><th>B</th></tr>
+        <tr><td colspan="2">Merged cell</td></tr>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>HTML Tags Review &middot; Pair project &middot; <a href="index.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

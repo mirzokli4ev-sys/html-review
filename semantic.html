@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Review — Semantic</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTML Tags Review</h1>
+  <p>Page 8 — Semantic and layout tags</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="text.html">Text</a>
+  <a href="links.html">Links &amp; Images</a>
+  <a href="lists.html">Lists</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="media.html">Multimedia</a>
+  <a href="semantic.html" class="active">Semantic</a>
+  <a href="metadata.html">Metadata</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Semantic and layout tags</h2>
+    <p>Semantic tags describe the meaning of a page region, which helps accessibility and SEO.</p>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;header&gt;, &lt;nav&gt;, &lt;footer&gt;</h3>
+    <h4>Definition</h4>
+    <p><code>&lt;header&gt;</code> is the top area (title/logo), <code>&lt;nav&gt;</code> holds the main
+       navigation menu, and <code>&lt;footer&gt;</code> is the bottom area (credits, links).</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Only global attributes; they have meaning, not special attributes.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;header&gt;Site title&lt;/header&gt;
+&lt;nav&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/nav&gt;
+&lt;footer&gt;© 2026&lt;/footer&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      This very page uses a <code>&lt;header&gt;</code>, a <code>&lt;nav&gt;</code> and a <code>&lt;footer&gt;</code>.
+    </div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;</h3>
+    <h4>Definition</h4>
+    <p><code>&lt;main&gt;</code> is the primary content, <code>&lt;section&gt;</code> is a thematic group,
+       <code>&lt;article&gt;</code> is a self-contained piece, and <code>&lt;aside&gt;</code> is side content.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Only global attributes.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;main&gt;
+  &lt;section&gt;
+    &lt;article&gt;A blog post&lt;/article&gt;
+  &lt;/section&gt;
+  &lt;aside&gt;Related links&lt;/aside&gt;
+&lt;/main&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <article class="demo-box">
+        <strong>A blog post</strong> — this is an <code>&lt;article&gt;</code>.
+      </article>
+    </div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;figure&gt; and &lt;figcaption&gt;</h3>
+    <h4>Definition</h4>
+    <p>Groups a media element (like an image) with its caption.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>(global)</td><td>Only global attributes.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;figure&gt;
+  &lt;img src="images/sample.jpg" alt="House" width="200"&gt;
+  &lt;figcaption&gt;A modern villa.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <figure class="demo-fig">
+        <img src="images/sample.jpg" alt="House" width="200">
+        <figcaption><em>A modern villa.</em></figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>HTML Tags Review &middot; Pair project &middot; <a href="index.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

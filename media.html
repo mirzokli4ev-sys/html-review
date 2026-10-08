@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Review — Multimedia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTML Tags Review</h1>
+  <p>Page 7 — Multimedia (audio, video, iframe)</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="text.html">Text</a>
+  <a href="links.html">Links &amp; Images</a>
+  <a href="lists.html">Lists</a>
+  <a href="tables.html">Tables</a>
+  <a href="forms.html">Forms</a>
+  <a href="media.html" class="active">Multimedia</a>
+  <a href="semantic.html">Semantic</a>
+  <a href="metadata.html">Metadata</a>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Multimedia</h2>
+    <p>These tags embed audio, video and other web pages inside your page.</p>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;audio&gt;</h3>
+    <h4>Definition</h4>
+    <p>Embeds a sound file with play, pause and volume controls.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>src</td><td>Path of the audio file (or use &lt;source&gt; inside).</td></tr>
+      <tr><td>controls</td><td>Shows the play/pause interface.</td></tr>
+      <tr><td>autoplay</td><td>Starts playing automatically (use with care).</td></tr>
+      <tr><td>loop</td><td>Repeats the audio when it ends.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;audio controls&gt;
+  &lt;source src="images/song.mp3" type="audio/mpeg"&gt;
+  Your browser does not support audio.
+&lt;/audio&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <audio controls>
+        <source src="images/song.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+      <p><small>(Add an <code>images/song.mp3</code> file to hear it play.)</small></p>
+    </div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;video&gt; and &lt;source&gt;</h3>
+    <h4>Definition</h4>
+    <p>Embeds a video player. <code>&lt;source&gt;</code> lets you offer several file formats.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>controls</td><td>Shows player controls.</td></tr>
+      <tr><td>width / height</td><td>Size of the video area.</td></tr>
+      <tr><td>poster</td><td>Image shown before the video plays.</td></tr>
+      <tr><td>muted</td><td>Starts without sound.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;video controls width="320" poster="images/sample.jpg"&gt;
+  &lt;source src="images/clip.mp4" type="video/mp4"&gt;
+  Your browser does not support video.
+&lt;/video&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <video controls width="320" poster="images/sample.jpg">
+        <source src="images/clip.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+      <p><small>(The poster image shows; add <code>images/clip.mp4</code> to play a video.)</small></p>
+    </div>
+  </section>
+
+  <section class="tag">
+    <h3>&lt;iframe&gt;</h3>
+    <h4>Definition</h4>
+    <p>Embeds another web page (for example a map or a YouTube video) inside the current page.</p>
+    <h4>Attributes</h4>
+    <table class="attrs">
+      <tr><th>Attribute</th><th>Role</th></tr>
+      <tr><td>src</td><td>URL of the page to embed.</td></tr>
+      <tr><td>width / height</td><td>Size of the frame.</td></tr>
+      <tr><td>title</td><td>Accessible description of the frame.</td></tr>
+      <tr><td>allowfullscreen</td><td>Lets the embedded content go full screen.</td></tr>
+    </table>
+    <h4>Example (code)</h4>
+<pre><code>&lt;iframe src="https://example.com"
+        width="320" height="180" title="Example site"&gt;&lt;/iframe&gt;</code></pre>
+    <h4>Example (result)</h4>
+    <div class="result">
+      <iframe src="https://example.com" width="320" height="180" title="Example site"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>HTML Tags Review &middot; Pair project &middot; <a href="index.html">Back to Home</a></p>
+</footer>
+
+</body>
+</html>

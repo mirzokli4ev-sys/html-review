@@ -1,0 +1,169 @@
+/* ===== HTML Review — shared stylesheet ===== */
+:root{
+  --blue:#1f6feb;
+  --dark:#0d1117;
+  --slate:#24292f;
+  --bg:#f5f7fa;
+  --card:#ffffff;
+  --border:#d0d7de;
+  --code-bg:#0d1117;
+  --code-txt:#e6edf3;
+  --accent:#0969da;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Segoe UI",Arial,Helvetica,sans-serif;
+  background:var(--bg);
+  color:var(--slate);
+  line-height:1.6;
+}
+
+/* ---- Header ---- */
+header{
+  background:var(--dark);
+  color:#fff;
+  padding:24px 20px;
+  text-align:center;
+  border-bottom:4px solid var(--blue);
+}
+header h1{font-size:28px;letter-spacing:.5px}
+header p{color:#9ba7b4;margin-top:6px;font-size:15px}
+
+/* ---- Navigation (Flexbox) ---- */
+nav{
+  background:var(--slate);
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:4px;
+  padding:10px;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+nav a{
+  color:#cdd3da;
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:6px;
+  font-size:14px;
+  transition:background .2s,color .2s;
+}
+nav a:hover{background:var(--blue);color:#fff}
+nav a.active{background:var(--blue);color:#fff;font-weight:600}
+
+/* ---- Layout ---- */
+main{
+  max-width:960px;
+  margin:30px auto;
+  padding:0 20px;
+}
+.intro{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-left:5px solid var(--blue);
+  border-radius:8px;
+  padding:20px 24px;
+  margin-bottom:28px;
+}
+.intro h2{color:var(--dark);margin-bottom:8px}
+
+/* ---- Tag card ---- */
+.tag{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:22px 24px;
+  margin-bottom:26px;
+  box-shadow:0 1px 3px rgba(0,0,0,.06);
+}
+.tag h3{
+  color:var(--blue);
+  font-family:Consolas,"Courier New",monospace;
+  font-size:22px;
+  margin-bottom:10px;
+  border-bottom:2px solid var(--border);
+  padding-bottom:8px;
+}
+.tag h4{
+  margin:16px 0 8px;
+  color:var(--dark);
+  font-size:15px;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+}
+
+/* ---- Attributes table ---- */
+table.attrs{
+  border-collapse:collapse;
+  width:100%;
+  margin-top:6px;
+}
+table.attrs th,table.attrs td{
+  border:1px solid var(--border);
+  padding:9px 12px;
+  text-align:left;
+  font-size:14px;
+}
+table.attrs th{
+  background:var(--slate);
+  color:#fff;
+}
+table.attrs td:first-child{
+  font-family:Consolas,"Courier New",monospace;
+  color:var(--accent);
+  white-space:nowrap;
+}
+table.attrs tr:nth-child(even) td{background:#f0f3f6}
+
+/* ---- Code block ---- */
+pre{
+  background:var(--code-bg);
+  color:var(--code-txt);
+  padding:16px;
+  border-radius:8px;
+  overflow-x:auto;
+  margin-top:6px;
+}
+pre code{
+  font-family:Consolas,"Courier New",monospace;
+  font-size:13.5px;
+  line-height:1.5;
+}
+
+/* ---- Live result ---- */
+.result{
+  border:1px dashed var(--blue);
+  background:#f7fbff;
+  border-radius:8px;
+  padding:16px;
+  margin-top:6px;
+}
+
+/* ---- Demo tables inside result ---- */
+.result table{border-collapse:collapse}
+.result table td,.result table th{border:1px solid #888;padding:6px 10px}
+
+/* ---- Demo helpers (keep CSS out of the HTML) ---- */
+.result h1,.result h2,.result h3{margin:0}
+.demo-box{border:1px solid #bbb;padding:8px;border-radius:6px}
+.demo-fig{margin:0}
+
+/* ---- Footer ---- */
+footer{
+  background:var(--dark);
+  color:#9ba7b4;
+  text-align:center;
+  padding:22px 20px;
+  margin-top:40px;
+  font-size:14px;
+}
+footer a{color:var(--blue);text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+/* ---- Responsive ---- */
+@media(max-width:600px){
+  header h1{font-size:22px}
+  nav{justify-content:flex-start;overflow-x:auto}
+  .tag{padding:18px}
+}
